@@ -1,0 +1,687 @@
+main {
+  max-width: 1920px;
+  width: 100%;
+  margin: auto;
+  /* position: relative; */
+}
+
+/* header */
+header {
+  background-color: #d5906e;
+  padding: 37px 240px 37px 240px;
+  position: sticky;
+  max-width: inherit;
+  width: inherit;
+  top: 0;
+  /* left: 0;  */
+  z-index: 1;
+  /* position: fixed;
+  transform: translatex( -50%) ; ეს აღარ მუშაობს, არც  მე-7 დავალების დროს იმუშავა. მაშინ
+  კონკრეტული კომენტარები არ მიმიღია. შემდეგ გაკვეთილზე აეწყო ეს ყველაფერი.  როგორც გაკვეთილზე
+  გაკეთდა ეგრე აქ არ გამოდის... */
+}
+
+.burge_icon {
+  font-size: 21px;
+  height: 16px;
+  color: white;
+  display: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 3px solid aqua; */
+}
+
+.first_ul {
+  display: flex;
+  gap: 60px;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  /* border: 3px solid red; */
+}
+
+.active {
+  color: #aa4919;
+}
+
+.no_active {
+  color: white;
+}
+
+a:hover {
+  color: red;
+}
+
+.second_ul {
+  display: flex;
+  font-family: "Inter", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0em;
+  color: white;
+  /* border: 3px solid black; */
+}
+
+.p_sign_in {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  /* border:2px solid yellow; */
+
+}
+
+.sign_icon {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  color: white;
+  /* border: 2px solid green; */
+}
+
+/* section 1 */
+section {
+ 
+  position: relative;
+  width: 100%;
+  /* height: 720px;   ეს სიმაღლე რატომღაც ზრდის მეხუთე section-ის სიმაღლეს,
+  არადა ამ მეხუთეს აქვს თავისი ინდ. კლასი. ეს რატომ ახდებს ზეგავლენას? */
+}
+
+.jar_photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.section_text {
+  /* border: 3px solid red; */
+  /* height: 249px; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0em;
+  color: white;
+  text-align: center;
+  margin-bottom: 16px;
+  animation: animated 5s linear infinite;
+}
+@keyframes animated {
+  0% {
+    color: green;
+  }
+  50% {
+    color: blue;
+  }
+  100% {
+    color: black;
+  }
+}
+
+.section_p1 {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  color: white;
+  margin-bottom: 72px;
+  text-align: center;
+  animation-name: letter-color-change;
+  animation-duration: 10s;
+}
+
+@keyframes letter-color-change {
+  from {
+    color: white;
+  }
+  to {
+    color: blue;
+  }
+}
+
+.search_div {
+  width: 61%;
+  padding: 19px 0 19px 0;
+  border: 1px solid #d5906e;
+  border-radius: 10px;
+  margin: auto;
+  /* border:2px solid red; */
+}
+
+.seacrh_p {
+  font-family: "Inter", sans-serif;
+  font-size:16 px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+/* section2 */
+
+.section2 {
+  /* border: 4px solid red; */
+  width: 73%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  height: 206px;
+  gap: 60px;
+  margin-top: 160px;
+  margin-bottom: 160px;
+}
+
+/* .section2_photos {
+   width: 190px;
+  height: 160px; 
+} */
+
+.section2_photo_p {
+  /* background-color: #1877f2; */
+}
+
+.section2_p {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  color: #b53b1b;
+  margin: 24px 28px 0 28px;
+}
+
+/* section3 */
+
+.section3 {
+  background-color: #402101;
+  width: 100%;
+  height: 920px;
+  padding: 96px 365px 0 15px;
+}
+
+h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0em;
+  color: white;
+  padding-left: 50%;
+  animation: animated 5s linear infinite;
+}
+
+.section3_div1 {
+  gap: 60px;
+  display: flex;
+  margin-top: 40px;
+}
+
+.section3_div2 {
+  gap: 60px;
+  display: flex;
+  margin-top: 60px;
+}
+
+.section3_photo3_and_photo4 {
+  width: 35%;
+}
+
+.section3_photo5 {
+  width: 55%;
+}
+
+/* section 4 */
+
+.section4 {
+  width: 85%;
+  height: 294px;
+  /* border: 4px solid yellow; */
+  margin: auto;
+  margin-top: 160px;
+  margin-bottom: 160px;
+}
+
+h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0em;
+  color: #402101;
+  margin: auto;
+  text-align: center;
+  animation: animated 5s linear infinite;
+}
+
+.section4_photo_div {
+  display: flex;
+  margin-top: 40px;
+  gap: 60px;
+}
+
+/* photo1 */
+.section4_photo1 {
+  position: relative;
+  width: 1440;
+}
+
+/* photo2 */
+.section4_photo2 {
+  position: relative;
+  width: 1440;
+}
+
+/* photo3 */
+.section4_photo3 {
+  position: relative;
+  width: 1440;
+}
+
+/* photo4 */
+.section4_photo4 {
+  position: relative;
+  width: 1440;
+}
+
+.section4_photo {
+  width: 100%;
+}
+
+.section4_border {
+  width: 33%;
+  height: 48px;
+  border-radius: 20px;
+  background-color: white;
+  padding: 17px 15px 17px 15px;
+  position: absolute;
+  top: 77%;
+  left: 27%;
+  transform: translate(-77%, -27%);
+}
+
+.section4_border_p {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  color: #b53b1b;
+}
+
+/* section 5  */
+
+.section5 {
+  width: 100%;
+  position: relative;
+  /* border: 2px solid yellow; */
+  margin-bottom: 160px;
+}
+
+.section5_photo {
+  width: 100%;
+}
+
+.section5_search_div {
+  width: 40%;
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  transform: translate(-20%, -40%);
+}
+
+h4 {
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0em;
+  color: white;
+  animation: animated 5s linear infinite;
+}
+
+.section5_input {
+  display: flex;
+  justify-content: space-between;
+  width: 87%;
+  height: 56px;
+  /* padding: 19px 0 19px 19px; */
+  border: 1px solid white;
+  border-radius: 15px;
+  margin-top: 56px;
+
+  /* backdrop-filter: blur(-1px); */
+}
+
+/* აქ "border:none"-ის და   "outline: none"-ის ერთობლივი
+გამოყენება გახდა საჭირო, რომ ტექსტის შეყვანის დროს
+ბორდერი არ გაიკეთოს....... განსხვავებით concatc.css შემთხვევისგან */
+
+input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.email_adress {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  color: white;
+}
+
+button {
+  background-color: white;
+  width: 30%;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border: none;
+  transition-property: background-color;
+  transition-duration: 10s;
+}
+
+button {
+  background-color: aqua;
+}
+
+.button_p {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+}
+
+.subscribe_color {
+  color: #402101;
+}
+
+/* article */
+
+.article_first_div {
+  width: 85%;
+  margin: auto;
+  /* border: 2px solid red; */
+}
+
+.article_second_div {
+  display: flex;
+  justify-content: space-between;
+}
+.article_third_div {
+  background-color: #e9cabb;
+  width: 30%;
+  height: 165px;
+}
+
+h5 {
+  font-family: "Inter", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-bottom: 40px;
+  animation: animated 5s linear infinite;
+}
+
+.article_first_p {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  color: #b53b1b;
+  margin-bottom: 24px;
+}
+
+.article_second_p {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  color: #402101;
+}
+
+h6 {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0em;
+  color: #402101;
+  text-align: center;
+  margin-top: 112px;
+  animation: animated 5s linear infinite;
+}
+
+.article_last_div {
+  width: 25%;
+  background-color: #b53b1b;
+  border-radius: 10px;
+  margin: auto;
+  /* padding: 14px 52px 14px 52px; */
+  text-align: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  margin-top: 20px;
+  transition-property: background-color;
+  transition-duration: 10s;
+}
+
+.article_last_div {
+  background-color: blue;
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.article_third_p {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  color: white;
+}
+
+/* footer */
+
+footer {
+  margin-top: 160px;
+  width: 100%;
+  padding: 32px 250px 57px 250px;
+  background-color: #402101;
+}
+
+.div_help_contacts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.first_li {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  margin-bottom: 16px;
+}
+
+.li_help_centre {
+  margin-bottom: 8px;
+}
+
+.last_lis {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  letter-spacing: 0em;
+}
+
+.linked_classes {
+  color: white;
+}
+
+.footer_icons_div {
+  display: flex;
+  gap: 27px;
+  margin-top: 43px;
+}
+
+.facebook_icon {
+  background-color: white;
+  color: #1877f2;
+  border-radius: 50%;
+}
+
+.contacts_div {
+}
+
+.icons_and_contacts {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.phone_phone_location_icons {
+  color: white;
+  font-size: 16px;
+}
+
+.p_contacts {
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  letter-spacing: 0em;
+  color: white;
+}
+
+.middle_contact_envelope {
+  margin-top: 29px;
+  margin-bottom: 33px;
+}
+
+
+/* header */
+@media (max-width: 1130px) {
+  header {
+    padding: 32px 20px 32px 20px;
+    width:58%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+
+  .second_ul{
+    margin-right: 102px;
+    margin-left: 102px;
+  }
+
+  .first_ul {
+    display: none;
+  }
+  .burge_icon {
+    display: block;
+  }
+  .second_ul {
+    flex-direction: column;
+  }
+  section{
+    width: 58%;
+  }
+  .section_text{
+    width: 91%;
+  }
+  h1{
+    font-size: 32px;
+  }
+  .search_div{
+    width: 33%;
+    height: 48px;
+   
+  }
+}
+
+
+@media(max-width:865px){
+  header{
+    width:60%;
+  }
+
+  .second_ul{
+    font-size: 32px;
+  }
+
+  .second_ul{
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+
+  section{
+    width:60%;
+  }
+  
+}
+
+@media(max-width:604px){
+ 
+.second_ul{
+  font-size: 20px;
+}
+
+.p_sign_in{
+  font-size: 10px;
+}
+
+}
+
+
+/* section */ 
+
+@media(max-width:1060px){
+  section{
+    width: 58%;
+    height: 400px;
+  }
+  .section_text{
+    width: 81%;
+  
+  }
+  h1{
+    font-size: 29px;
+    
+  }
+}
+ 
+
+
+/* ეგაა რაცაა.. */
+
