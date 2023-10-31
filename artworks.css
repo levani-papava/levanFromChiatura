@@ -1,3 +1,430 @@
-h1{
-    font-size: 47;
+main {
+  max-width: 1920px;
+  width: 100%;
+  margin: auto;
+  position: relative;
+  /* border: 3px solid red; */
+}
+
+/* header */
+header {
+  background-color: #d5906e;
+  padding: 37px 240px 37px 240px;
+  /* position: sticky; */
+  /* max-width: inherit;
+    width: inherit;
+    top: 0;
+    /* left: 0;  */
+  /* z-index: 1;  */
+  /* position: fixed;
+    transform: translatex( -50%) ; ეს აღარ მუშაობს, არც  მე-7 დავალების დროს იმუშავა. მაშინ
+    კონკრეტული კომენტარები არ მიმიღია. შემდეგ გაკვეთილზე აეწყო ეს ყველაფერი.  როგორც გაკვეთილზე
+    გაკეთდა ეგრე აქ არ გამოდის... */
+}
+
+.burge_icon {
+  font-size: 21px;
+  height: 16px;
+  color: white;
+  display: none;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  /* border: 3px solid aqua; */
+}
+
+.first_ul {
+  display: flex;
+  gap: 60px;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  /* border: 3px solid red; */
+}
+
+.active {
+  color: #aa4919;
+}
+
+.no_active {
+  color: white;
+}
+
+a:hover {
+  color: red;
+}
+
+.second_ul {
+  display: flex;
+  font-family: "Inter", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0em;
+  color: white;
+   border: 3px solid black; 
+ }
+/* 
+.p_sign_in {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  /* border:2px solid yellow; */
+/* } */ 
+
+/* .sign_icon {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  color: white;
+  /* border: 2px solid green; */
+/* } */ 
+
+/* section1*/
+
+section {
+  width: 100%;
+  position: relative;
+}
+
+.artworks_photo {
+  width: 100%;
+  border: 3px solid red;
+}
+
+.section_main_div {
+  width: 36%;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-60%, -50%);
+}
+
+.shop_now_div {
+  width: 55%;
+  border: 1px solid #d5906e;
+  border-radius: 10px;
+  margin: auto;
+  /* position: relative; */
+}
+
+.shop_now_div::before {
+  content: "";
+  /* position: absolute; */
+  width: 0;
+  height: 3px;
+  background-color: aqua;
+  display: block;
+  transition: 1.5s;
+}
+
+.shop_now_div::after {
+  content: "";
+  /* position: absolute; */
+  background-color: aqua;
+  height: 3px;
+  display: block;
+  width: 0;
+  transition: 1.5s;
+}
+
+.shop_now_div:hover::before,
+.shop_now_div:hover::after {
+  width: 100%;
+}
+
+h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0em;
+  color: white;
+  margin-bottom: 72px;
+}
+
+.section_p {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 16px;
+}
+
+.p_color {
+  color: white;
+}
+
+/* section2 */
+
+.section2 {
+  width: 100%;
+  /* border: solid 3px yellow; */
+}
+
+.form_and_search {
+  margin-top: 160px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 59px;
+  /* border: solid 2px blue; */
+  margin-left: 25%;
+}
+
+/* .div-margin{
+  
+  margin: auto;
+} */
+select {
+  border: none;
+  outline: none;
+}
+
+.select_first_option {
+  color: #402101;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+.section2_form {
+  width: 80%;
+  /* border: solid 2px red; */
+}
+
+.section2_input {
+  width: 60%;
+  border: 1px solid #402101;
+  border-radius: 13px;
+  padding-left: 16px;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: solid 2px  green; */
+}
+
+.section2_searchp {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  color: #402101;
+  border: none;
+  outline: none;
+}
+
+button {
+  width: 35%;
+  height: 100%;
+  border: none;
+  /* border-radius: 10px; */
+  background-color: #402101;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.button_p {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  color: white;
+}
+
+.section2_P {
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0em;
+  color: #402101;
+  margin-left: 100px;
+  margin-top: 61px;
+}
+
+/* section3 */
+
+.section3 {
+  width: 100%;
+}
+
+.photo_box1{
+  width:23.5%;
+  border: solid 2px red;
+}
+
+.photo_box_p_1 {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  color: #B53B1B;
+  margin-top: 22px;
+}
+
+.photo_box_p_2 {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+}
+
+.photo_box_icon {
+  font-size: 30px;
+  color:#402101;
+
+}
+
+.box_p2_i{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+
+.photo_box2{
+  width:23.5%;
+  border: solid 2px blue;
+}
+
+.photo_box3{
+  width:23.5%;
+  border: solid 2px green;
+}
+
+.photo_box4{
+  width:23.5%;
+  border: solid 2px aqua;
+
+}
+
+.photo_box5{
+  width:23.5%;
+  border: solid 2px yellow;
+
+}
+
+.photo_box6{
+  width:23.5%;
+  border: solid 2px orangered;
+
+}
+
+.photo_box7{
+  width:23.5%;
+  border: solid 2px blueviolet;
+
+}
+
+.photo_box8{
+  width:23.5%;
+  border: solid 2px grey;
+
+}
+
+.wrap_photos{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 60px;
+ 
+  
+}
+
+
+/* footer */
+
+footer {
+  margin-top: 160px;
+  width: 100%;
+  padding: 32px 250px 57px 250px;
+  background-color: #402101;
+}
+
+.div_help_contacts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.first_li {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  margin-bottom: 16px;
+}
+
+.li_help_centre {
+  margin-bottom: 8px;
+}
+
+.last_lis {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  letter-spacing: 0em;
+}
+
+.linked_classes {
+  color: white;
+}
+
+.footer_icons_div {
+  display: flex;
+  gap: 27px;
+  margin-top: 43px;
+}
+
+.facebook_icon {
+  background-color: white;
+  color: #1877f2;
+  border-radius: 50%;
+}
+
+.contacts_div {
+}
+
+.icons_and_contacts {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.phone_phone_location_icons {
+  color: white;
+  font-size: 16px;
+}
+
+.p_contacts {
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  letter-spacing: 0em;
+  color: white;
+}
+
+.middle_contact_envelope {
+  margin-top: 29px;
+  margin-bottom: 33px;
 }

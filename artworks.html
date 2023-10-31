@@ -1,13 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>artworks</title>
-</head>
-<body>
+    <link rel="stylesheet" href="reset.css" />
+    <script
+      src="https://kit.fontawesome.com/085bce8105.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="artworks.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <!-- header -->
+      <header>
+        <i class="bi bi-list burge_icon"></i>
+        <nav>
+          <ul class="first_ul">
+            <li><a class="no_active" href="index.html"> Home </a></li>
+            <li><a class="active" href="artworks.html"> Artworks </a></li>
+            <li><a class="no_active" href="contact.html"> Contact </a></li>
+            <li>
+              <a class="no_active" href="./register.html"> Registration </a>
+            </li>
+            <li><a class="no_active" href="./signIn.html"> Sign in </a></li>
+          </ul>
+        
+        </nav>
+      </header>
+      <!-- section1 -->
 
-<h1> done:none </h1>
-    
-</body>
+      <section>
+        <img
+          class="artworks_photo"
+          src="./images/artwoks photo.png"
+          alt="photo"
+        />
+        <div class="section_main_div">
+          <h2>Find Something Beautiful</h2>
+          <div class="shop_now_div">
+            <p class="section_p">
+              <a class="p_color" href="https://www.radioatinati.ge/">
+                Shop Now
+              </a>
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- section2-->
+
+      <section class="section2">
+        <div class="form_and_search">
+          <form>
+            <select class="select_first_option" name="products" id="">
+              <option>Shop By Category</option>
+              <option value="product1">product1</option>
+              <option value="product2">product2</option>
+              <option value="product3">product3</option>
+              <option value="product4">product4</option>
+              <option value="product5">product5</option>
+              <option value="product6">product6</option>
+              <option value="product7">product7</option>
+              <option value="product8">product8</option>
+            </select>
+          </form>
+          <form
+            class="section2_form"
+            action="http://127.0.0.1:5500/artworks.html"
+            method="get"
+          >
+            <div class="section2_input">
+              <input
+                type="text"
+                class="section2_searchp"
+                placeholder="Search For Anything"
+                name="Search For Anything"
+              />
+              <button type="submit">SEARCH</button>
+            </div>
+          </form>
+        </div>
+        <p class="section2_P">All Category</p>
+      </section>
+
+      <!-- section3 -->
+
+      <section class="section3">
+        <div class="wrap_photos">
+          <div class="photo_box1">
+            <img src="./images/sec2-photo1.png" alt="photo" />
+            <p class="photo_box_p_1">Product Name</p>
+            <div class="box_p2_i">
+              <p class="photo_box_p_2">$40.00</p>
+              <i class="bi bi-cart3 photo_box_icon"></i>
+            </div>
+          </div>
+          <div class="photo_box2">
+            <img src="./images/sec2-photo2.png" alt="photo" />
+            <p class="photo_box_p_1">Product Name</p>
+            <div class="box_p2_i">
+              <p class="photo_box_p_2">$40.00</p>
+              <i class="bi bi-cart3 photo_box_icon"></i>
+            </div>
+          </div>
+
+          <div class="photo_box3">
+            <img src="./images/sec2-photo3.png" />
+            <p class="photo_box_p_1">Product Name</p>
+            <div class="box_p2_i">
+              <p class="photo_box_p_2">$40.00</p>
+              <i class="bi bi-cart3 photo_box_icon"></i>
+            </div>
+          </div>
+
+          <div class="photo_box4">
+            <img src="./images/sec2-photo4.png" />
+            <p class="photo_box_p_1">Product Name</p>
+            <div class="box_p2_i">
+              <p class="photo_box_p_2">$40.00</p>
+              <i class="bi bi-cart3 photo_box_icon"></i>
+            </div>
+          </div>
+
+          <div class="photo_box5">
+            <img src="./images/sec2-photo5.png" />
+            <p class="photo_box_p_1">Product Name</p>
+            <div class="box_p2_i">
+              <p class="photo_box_p_2">$40.00</p>
+              <i class="bi bi-cart3 photo_box_icon"></i>
+            </div>
+          </div>
+
+          <div class="photo_box6">
+            <img src="./images/sec2-photo7.png" />
+            <p class="photo_box_p_1">Product Name</p>
+            <div class="box_p2_i">
+              <p class="photo_box_p_2">$40.00</p>
+              <i class="bi bi-cart3 photo_box_icon"></i>
+            </div>
+          </div>
+
+          <div class="photo_box7">
+            <img src="./images/sec2-photo8.png" />
+            <p class="photo_box_p_1">Product Name</p>
+            <div class="box_p2_i">
+              <p class="photo_box_p_2">$40.00</p>
+              <i class="bi bi-cart3 photo_box_icon"></i>
+            </div>
+          </div>
+
+          <div class="photo_box8">
+            <img src="./images/sec2-photo8.png" />
+            <p class="photo_box_p_1">Product Name</p>
+            <div class="box_p2_i">
+              <p class="photo_box_p_2">$40.00</p>
+              <i class="bi bi-cart3 photo_box_icon"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+        <footer>
+          <div class="div_help_contacts">
+            <nav>
+              <ul>
+                <li class="first_li">
+                  <a class="linked_classes" href="https://www.radioatinati.ge/">
+                    Hele
+                  </a>
+                </li>
+                <li class="last_lis li_help_centre">
+                  <a class="linked_classes" href="https://www.radioatinati.ge/">
+                    Help Centre
+                  </a>
+                </li>
+                <li class="last_lis">
+                  <a class="linked_classes" href="https://www.radioatinati.ge/">
+                    Privacy Settings
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <nav>
+              <ul class="second_ul">
+                <li>Earthly</li>
+                <li class="active">Artisry</li>
+              </ul>
+            </nav>
+
+            <div class="contacts_div">
+              <div class="icons_and_contacts">
+                <i class="bi bi-telephone phone_phone_location_icons"></i>
+                <p class="p_contacts">+123 45 67 89</p>
+              </div>
+              <div class="icons_and_contacts middle_contact_envelope">
+                <i class="bi bi-envelope phone_phone_location_icons"></i>
+                <p class="p_contacts">example@mail.com</p>
+              </div>
+              <div class="icons_and_contacts">
+                <i class="bi bi-geo-alt-fill phone_phone_location_icons"></i>
+                <p class="p_contacts">Rustaveli avenue, 30</p>
+              </div>
+            </div>
+          </div>
+          <nav>
+            <div class="footer_icons_div">
+              <a href="https://www.youtube.com/">
+                <img src="./images/logos_youtube.svg" alt="youtube" />
+              </a>
+              <a href="https://www.instagram.com/">
+                <img
+                  src="./images/skill-icons_instagram.svg "
+                  alt="instagram"
+                />
+              </a>
+              <a href="https://www.facebook.com/">
+                <img
+                  class="facebook_icon"
+                  src="./images/Vector (3).svg"
+                  alt="facebook"
+              /></a>
+            </div>
+          </nav>
+        </footer>
+    </main>
+  </body>
 </html>

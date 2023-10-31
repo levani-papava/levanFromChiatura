@@ -1,0 +1,195 @@
+body{
+  background-color: #0f172a;
+
+}
+
+/* header */
+header {
+  background-color: #d5906e;
+  padding: 37px 240px 37px 240px;
+
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  /* border: 3px solid aqua; */
+} 
+
+.first_ul {
+  display: flex;
+  gap: 60px;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+}
+
+.active {
+  color: #aa4919;
+}
+
+.no_active {
+  color: white;
+}
+
+a:hover {
+  color: red;
+}
+
+.second_ul {
+  display: flex;
+  font-family: "Inter", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0em;
+  color: white;
+}
+
+
+.section_div {
+  width: 25%;
+  height: 300px;
+  padding: 24px 30px 24px 30px;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  transform: translate(-20%, -10%);
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: #402101;
+}
+
+h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0em;
+  color: white;
+  animation: animated 5s linear infinite;
+}
+
+
+ .firstname_lastname_container {
+  margin-top: 30px;
+  margin-bottom: 26px;
+  display: flex;
+  justify-content: space-between;
+
+} 
+
+.contact_container {
+  width: 40%;
+  border: 1px solid white;
+  padding: 11px 116px 11px 8px;
+  border-radius: 10px;
+}
+
+.Firstname{
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  color: white;
+  border: none;
+}
+
+.Lastname{
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  color: white;
+  border: none;
+}
+
+
+.username{
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  color: white;
+  border: none;
+}
+
+.password{
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  color: white;
+  border: none;
+
+}
+
+
+input {
+  background-color: transparent;
+  /* border: none; */
+  outline: none;
+}
+
+.massage_container {
+  height: 70px;
+  /* padding: 8px 372px 71px 8px; */
+  border: 1px solid white;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.submit {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  color: white;
+  margin-inline: auto;
+}
+
+.contact_button {
+  background-color: #d5906e;
+  width: 35%;
+  height: 36px;
+  border-radius: 10px;
+  margin-top: 16px;
+  transition-property: background-color;
+  transition-duration: 5s;
+}
+
+.contact_button{
+  background-color: green;
+ 
+
+}
+
+
+p{
+  display: inline-block;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+}
+
+  @keyframes animated {
+    0% {
+      color: green;
+    }
+    50% {
+      color: blue;
+    }
+    100% {
+      color: black;
+    }
+  }

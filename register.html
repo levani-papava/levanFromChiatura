@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="reset.css" />
+    <script
+      src="https://kit.fontawesome.com/085bce8105.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="register.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@700;900&family=Nerko+One&family=Poppins:wght@600&family=Ubuntu:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav>
+        <ul class="first_ul">
+          <li><a class="no_active" href="index.html"> Home </a></li>
+          <li><a class="no_active" href="artworks.html"> Artworks </a></li>
+          <li><a class="no_active" href="contact.html"> Contact </a></li>
+          <li>
+            <a class="active" href="./register.html"> Registration </a>
+          </li>
+          <li><a class="no_active" href="./signIn.html"> Sign in </a></li>
+        </ul>
+      </nav>
+    </header>
+     <div class="container"> 
+      <h2>Join us today 👋</h2>
+      <p>We Make an Offer You Can't Refuse</p>
+      <form>
+        <!-- firstname -->
+        <label for="Firstname">First Name</label>
+        <input onkeyup="FirstnameValidator()" type="text" id="Firstname" placeholder="Levani"  required pattern="^[A-Za-z]{3,10}$" />   
+        <br>
+        <p id="FirstnameValid"> </p>
+        <!-- lastname -->
+        <label for="Lastname">Last Name</label>
+        <input onkeyup="LastnameValidator()" type="text" id="Lastname" placeholder="Papava" required pattern="^[A-Za-z]{3,10}$" />
+        <br>
+        <p id="LastnameValid"></p>
+        <!-- username -->
+        <label for="Username">Username</label>
+        <input onkeyup="Usernamevalidator()" type="text" id="Username" placeholder="Miasanmia"  required pattern="^[A-Za-z]{3,10}$"/>
+        <br>
+        <p id="UsernameValid"> </p>
+        <!-- password -->
+        <label for="password"> password</label>
+        <input onkeyup="passwordValidator()" type="text" id="password" placeholder="*********" required parttern="^[A-Z].{0,8}$">
+        <br>
+        <p id="passwordValidator"> </p>
+        <button type="submit"  id="registerUser" onclick="registration(event)">create account</button>
+      </form>
+    </div>
+    <script type="text/javascript" src="./registration.js"></script>
+  </body>
+</html>
